@@ -5,7 +5,7 @@
     name: "Samyut Yoga",
     alternateName: "Samyut Yoga Gurukulam",
     url: "https://samyutyoga.com",
-    logo: "/images/logo.png",
+    logo: "/images/logo.jpg",
     description:
       "The Traditional Yoga School in Mysore. 200hr Ashtanga & Hatha Yoga Teacher Training. E-RYT 500 certified.",
     address: {
@@ -171,4 +171,5 @@ export function FAQJsonLd({ faqs }: { faqs: { q: string; a: string }[] }) {
     />
   );
 }
+
 

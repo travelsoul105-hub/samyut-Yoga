@@ -1,7 +1,7 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Image from "next/image";
 import { Mail, Phone, Star } from "lucide-react";
-// Social icons — inline SVG used because lucide barrel optimizer issue with these icons
+// Social icons â€” inline SVG used because lucide barrel optimizer issue with these icons
 const InstagramIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4">
     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
@@ -53,7 +53,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-5">
               <Image
-                src="/images/logo.png"
+                src="/images/logo.jpg"
                 alt="Samyut Yoga"
                 width={48}
                 height={48}
@@ -87,7 +87,7 @@ export default function Footer() {
                 ))}
                 <Star className="w-3.5 h-3.5 text-gold fill-gold/40" />
               </div>
-              <span className="text-ivory/60 text-xs">4.3★ Trustpilot</span>
+              <span className="text-ivory/60 text-xs">4.3â˜… Trustpilot</span>
             </div>
           </div>
 
@@ -160,7 +160,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-ivory/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-ivory/40 text-xs text-center sm:text-left">
-            © {new Date().getFullYear()} Samyut Yoga. All rights reserved. Mysore, Karnataka, India.
+            Â© {new Date().getFullYear()} Samyut Yoga. All rights reserved. Mysore, Karnataka, India.
           </p>
           <p className="text-ivory/40 text-xs">
             Scientific & Mystical Yoga for Universal Transformation
@@ -170,3 +170,4 @@ export default function Footer() {
     </footer>
   );
 }
+

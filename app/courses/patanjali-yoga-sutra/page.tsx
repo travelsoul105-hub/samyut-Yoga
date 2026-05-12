@@ -93,7 +93,7 @@ export default function PatanjaliCoursePage() {
       <section className="py-16 px-4 border-b border-forest/10">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
           <Image
-            src="/images/logo.png"
+            src="/images/logo.jpg"
             alt="Yogacharya Aravind Prasad"
             width={96}
             height={96}
@@ -193,4 +193,5 @@ export default function PatanjaliCoursePage() {
     </main>
   );
 }
+
 

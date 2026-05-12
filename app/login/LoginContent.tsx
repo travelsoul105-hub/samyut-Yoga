@@ -106,7 +106,7 @@ export default function LoginContent() {
         <div className="text-center mb-8">
           <Link href="/" className="inline-flex items-center gap-3">
             <Image
-              src="/images/logo.png"
+              src="/images/logo.jpg"
               alt="Samyut Yoga" width={52} height={52} className="rounded-full"
             />
             <div className="text-left">
@@ -260,4 +260,5 @@ export default function LoginContent() {
     </div>
   );
 }
+
 

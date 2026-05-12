@@ -48,7 +48,7 @@ export default async function PendingPage() {
       <div className="relative z-10 w-full max-w-md text-center">
         <Link href="/" className="inline-flex items-center gap-3 mb-10 justify-center">
           <Image
-            src="/images/logo.png"
+            src="/images/logo.jpg"
             alt="Samyut Yoga" width={52} height={52} className="rounded-full"
           />
           <div className="text-left">
@@ -117,4 +117,5 @@ export default async function PendingPage() {
     </div>
   );
 }
+
 

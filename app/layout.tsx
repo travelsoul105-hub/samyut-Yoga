@@ -50,7 +50,7 @@ export const metadata: Metadata = {
       "The Traditional Yoga School in Mysore. 200hr Ashtanga & Hatha Yoga Teacher Training. An authentic space for Vedanta, Tantra and Yoga. E-RYT 500 certified. 15+ years, 500+ students trained.",
     images: [
       {
-        url: "/images/logo.png",
+        url: "/images/logo.jpg",
         width: 1024,
         height: 1024,
         alt: "Samyut Yoga",
@@ -85,4 +85,5 @@ export default function RootLayout({
     </html>
   );
 }
+
 
