@@ -53,7 +53,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-5">
               <Image
-                src="https://samyutyoga.com/storage/2024/07/SVAYAMLOGOPNG-1024x1024.png"
+                src="/images/logo.png"
                 alt="Samyut Yoga"
                 width={48}
                 height={48}

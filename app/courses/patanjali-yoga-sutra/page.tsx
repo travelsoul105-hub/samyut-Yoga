@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Patanjali Yoga Sutra Mastery Course — Online with Yogacharya Aravind Prasad",
+  title: "Patanjali Yoga Sutra Mastery Course â€” Online with Yogacharya Aravind Prasad",
   description:
-    "Complete video study of the 196 Yoga Sutras of Patanjali. 6 in-depth sessions covering all 4 chapters — Samadhi, Sadhana, Vibhuti and Kaivalya Padas. Online, self-paced. Certificate included. By Yogacharya Aravind Prasad.",
+    "Complete video study of the 196 Yoga Sutras of Patanjali. 6 in-depth sessions covering all 4 chapters â€” Samadhi, Sadhana, Vibhuti and Kaivalya Padas. Online, self-paced. Certificate included. By Yogacharya Aravind Prasad.",
   keywords: [
     "yoga sutras of patanjali course online",
     "patanjali yoga sutra study",
@@ -25,11 +25,11 @@ import { BookOpen, Video, Globe, Award, CheckCircle, Play } from "lucide-react";
 
 const lessons = [
   { position: 1, title: "Introduction to Patanjali Yoga Sutra", youtubeId: "PbE4_OU8_00" },
-  { position: 2, title: "Samadhi Pada — The Nature of the Mind", youtubeId: "3tt3E_H6aP4" },
-  { position: 3, title: "Sadhana Pada — The Path of Practice", youtubeId: "zSLbBTNnK2k" },
-  { position: 4, title: "Vibhuti Pada — Powers & Achievements", youtubeId: "6IN5vHp99p8" },
-  { position: 5, title: "Kaivalya Pada — Liberation & Freedom", youtubeId: "4GwzhpHTg5c" },
-  { position: 6, title: "Integration — Living the Sutras", youtubeId: "67QRlDi3Cyw" },
+  { position: 2, title: "Samadhi Pada â€” The Nature of the Mind", youtubeId: "3tt3E_H6aP4" },
+  { position: 3, title: "Sadhana Pada â€” The Path of Practice", youtubeId: "zSLbBTNnK2k" },
+  { position: 4, title: "Vibhuti Pada â€” Powers & Achievements", youtubeId: "6IN5vHp99p8" },
+  { position: 5, title: "Kaivalya Pada â€” Liberation & Freedom", youtubeId: "4GwzhpHTg5c" },
+  { position: 6, title: "Integration â€” Living the Sutras", youtubeId: "67QRlDi3Cyw" },
 ];
 
 const highlights = [
@@ -61,12 +61,12 @@ export default function PatanjaliCoursePage() {
             Patanjali Yoga Sutra
           </h1>
           <p className="text-ivory/65 font-inter text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
-            A complete video study of the 196 Yoga Sutras — the ancient scripture that defines the
-            philosophy, practice and goal of yoga — taught by Yogacharya Aravind Prasad.
+            A complete video study of the 196 Yoga Sutras â€” the ancient scripture that defines the
+            philosophy, practice and goal of yoga â€” taught by Yogacharya Aravind Prasad.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-6 text-ivory/50 font-inter text-sm mb-10">
             <span className="flex items-center gap-2"><Video className="w-4 h-4 text-gold" /> 6 Video Lessons</span>
-            <span className="flex items-center gap-2"><Globe className="w-4 h-4 text-gold" /> Online · Self-paced</span>
+            <span className="flex items-center gap-2"><Globe className="w-4 h-4 text-gold" /> Online Â· Self-paced</span>
             <span className="flex items-center gap-2"><BookOpen className="w-4 h-4 text-gold" /> All Levels</span>
             <span className="flex items-center gap-2"><Award className="w-4 h-4 text-gold" /> Certificate Included</span>
           </div>
@@ -75,7 +75,7 @@ export default function PatanjaliCoursePage() {
               href="/login"
               className="bg-terracotta hover:bg-terracotta/90 text-white px-8 py-4 rounded font-inter font-semibold text-sm transition-all duration-200"
             >
-              Enroll Now — Access Course
+              Enroll Now â€” Access Course
             </Link>
             <a
               href={`https://www.youtube.com/watch?v=PbE4_OU8_00`}
@@ -93,7 +93,7 @@ export default function PatanjaliCoursePage() {
       <section className="py-16 px-4 border-b border-forest/10">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
           <Image
-            src="https://samyutyoga.com/storage/2024/07/SVAYAMLOGOPNG-1024x1024.png"
+            src="/images/logo.png"
             alt="Yogacharya Aravind Prasad"
             width={96}
             height={96}
@@ -105,7 +105,7 @@ export default function PatanjaliCoursePage() {
               Yogacharya Aravind Prasad
             </h2>
             <p className="text-charcoal/60 font-inter text-sm leading-relaxed">
-              E-RYT 500 · YACEP · 15+ years of teaching experience · Founder, Samyut Yoga Mysore.
+              E-RYT 500 Â· YACEP Â· 15+ years of teaching experience Â· Founder, Samyut Yoga Mysore.
               Aravind has dedicated over a decade to the study and teaching of classical yoga philosophy,
               with a deep focus on the Yoga Sutras of Patanjali as the foundation of authentic yoga practice.
             </p>
@@ -137,7 +137,7 @@ export default function PatanjaliCoursePage() {
             Course Curriculum
           </h2>
           <p className="text-charcoal/50 font-inter text-sm text-center mb-10">
-            6 lessons · Patanjali Yoga Sutra
+            6 lessons Â· Patanjali Yoga Sutra
           </p>
 
           <div className="space-y-3">
@@ -193,3 +193,4 @@ export default function PatanjaliCoursePage() {
     </main>
   );
 }
+

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | Samyut Yoga",
   },
   description:
-    "Samyut Yoga — The Traditional Yoga School in Mysore. 200hr Ashtanga & Hatha Yoga Teacher Training. An authentic space for Vedanta, Tantra and Yoga. E-RYT 500 certified. Founded by Yogacharya Aravind Prasad.",
+    "Samyut Yoga â€” The Traditional Yoga School in Mysore. 200hr Ashtanga & Hatha Yoga Teacher Training. An authentic space for Vedanta, Tantra and Yoga. E-RYT 500 certified. Founded by Yogacharya Aravind Prasad.",
   keywords: [
     "yoga teacher training mysore",
     "ashtanga yoga teacher training",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
       "The Traditional Yoga School in Mysore. 200hr Ashtanga & Hatha Yoga Teacher Training. An authentic space for Vedanta, Tantra and Yoga. E-RYT 500 certified. 15+ years, 500+ students trained.",
     images: [
       {
-        url: "https://samyutyoga.com/storage/2024/07/SVAYAMLOGOPNG-1024x1024.png",
+        url: "/images/logo.png",
         width: 1024,
         height: 1024,
         alt: "Samyut Yoga",
@@ -85,3 +85,4 @@ export default function RootLayout({
     </html>
   );
 }
+

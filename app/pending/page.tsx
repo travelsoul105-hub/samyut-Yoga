@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { createClient } from "@/lib/supabase/server";
 
 export const metadata: Metadata = {
-  title: "Enrollment Under Review — Samyut Yoga",
+  title: "Enrollment Under Review â€” Samyut Yoga",
   description: "Your Samyut Yoga enrollment is under review. We will activate your student dashboard within 24 hours.",
   robots: { index: false, follow: false },
 };
@@ -48,7 +48,7 @@ export default async function PendingPage() {
       <div className="relative z-10 w-full max-w-md text-center">
         <Link href="/" className="inline-flex items-center gap-3 mb-10 justify-center">
           <Image
-            src="https://samyutyoga.com/storage/2024/07/SVAYAMLOGOPNG-1024x1024.png"
+            src="/images/logo.png"
             alt="Samyut Yoga" width={52} height={52} className="rounded-full"
           />
           <div className="text-left">
@@ -117,3 +117,4 @@ export default async function PendingPage() {
     </div>
   );
 }
+

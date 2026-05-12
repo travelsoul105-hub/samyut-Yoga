@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -106,7 +106,7 @@ export default function LoginContent() {
         <div className="text-center mb-8">
           <Link href="/" className="inline-flex items-center gap-3">
             <Image
-              src="https://samyutyoga.com/storage/2024/07/SVAYAMLOGOPNG-1024x1024.png"
+              src="/images/logo.png"
               alt="Samyut Yoga" width={52} height={52} className="rounded-full"
             />
             <div className="text-left">
@@ -158,7 +158,7 @@ export default function LoginContent() {
                 </div>
                 <button type="submit" disabled={signInLoading}
                   className="w-full bg-terracotta hover:bg-terracotta/90 text-white py-3.5 rounded font-inter font-semibold text-sm transition-all duration-200 disabled:opacity-60">
-                  {signInLoading ? "Signing in…" : "Sign In to Dashboard"}
+                  {signInLoading ? "Signing inâ€¦" : "Sign In to Dashboard"}
                 </button>
               </form>
 
@@ -180,7 +180,7 @@ export default function LoginContent() {
 
               {signUpSuccess ? (
                 <div className="bg-gold/10 border border-gold/30 rounded px-5 py-6 text-center">
-                  <p className="font-cormorant text-2xl text-gold mb-3">Namaste 🙏</p>
+                  <p className="font-cormorant text-2xl text-gold mb-3">Namaste ðŸ™</p>
                   <p className="text-ivory/80 font-inter text-sm leading-relaxed">
                     Your application has been received. We will review and confirm your enrollment within 24 hours. Please check your email.
                   </p>
@@ -231,7 +231,7 @@ export default function LoginContent() {
                       <select required value={courseInterest}
                         onChange={(e) => setCourseInterest(e.target.value)}
                         className={`${inputClass} appearance-none`}>
-                        <option value="" disabled className="bg-forest">Select a course…</option>
+                        <option value="" disabled className="bg-forest">Select a courseâ€¦</option>
                         {COURSE_OPTIONS.map((o) => (
                           <option key={o.value} value={o.value} className="bg-forest">{o.label}</option>
                         ))}
@@ -239,7 +239,7 @@ export default function LoginContent() {
                     </div>
                     <button type="submit" disabled={signUpLoading}
                       className="w-full bg-terracotta hover:bg-terracotta/90 text-white py-3.5 rounded font-inter font-semibold text-sm transition-all duration-200 disabled:opacity-60 mt-1">
-                      {signUpLoading ? "Creating account…" : "Create Account"}
+                      {signUpLoading ? "Creating accountâ€¦" : "Create Account"}
                     </button>
                   </form>
                 </>
@@ -249,7 +249,7 @@ export default function LoginContent() {
                 <p className="text-ivory/40 font-inter text-xs">
                   Already have an account?{" "}
                   <button onClick={() => setTab("signin")} className="text-gold hover:underline">
-                    Sign in →
+                    Sign in â†’
                   </button>
                 </p>
               </div>
@@ -260,3 +260,4 @@ export default function LoginContent() {
     </div>
   );
 }
+

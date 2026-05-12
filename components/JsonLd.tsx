@@ -1,11 +1,11 @@
-export function OrganizationJsonLd() {
+﻿export function OrganizationJsonLd() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
     name: "Samyut Yoga",
     alternateName: "Samyut Yoga Gurukulam",
     url: "https://samyutyoga.com",
-    logo: "https://samyutyoga.com/storage/2024/07/SVAYAMLOGOPNG-1024x1024.png",
+    logo: "/images/logo.png",
     description:
       "The Traditional Yoga School in Mysore. 200hr Ashtanga & Hatha Yoga Teacher Training. E-RYT 500 certified.",
     address: {
@@ -171,3 +171,4 @@ export function FAQJsonLd({ faqs }: { faqs: { q: string; a: string }[] }) {
     />
   );
 }
+

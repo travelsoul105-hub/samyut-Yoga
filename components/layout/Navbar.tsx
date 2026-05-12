@@ -54,7 +54,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-3 flex-shrink-0">
             <div className="rounded-full bg-ivory p-0.5 ring-2 ring-ivory/40 flex-shrink-0">
               <Image
-                src="https://samyutyoga.com/storage/2024/07/SVAYAMLOGOPNG-1024x1024.png"
+                src="/images/logo.png"
                 alt="Samyut Yoga"
                 width={38}
                 height={38}
