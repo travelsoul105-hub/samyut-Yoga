@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #F7F3EC;
+  --foreground: #2C2C2C;
+  --forest: #1C0E05;
+  --ivory: #F7F3EC;
+  --terracotta: #C4714A;
+  --gold: #C9A84C;
+  --amber: #8B5E3C;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .heading-xl {
+    @apply font-cormorant text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight;
+  }
+  .heading-lg {
+    @apply font-cormorant text-4xl md:text-5xl font-semibold leading-tight;
+  }
+  .heading-md {
+    @apply font-cormorant text-3xl md:text-4xl font-semibold;
+  }
+  .btn-primary {
+    @apply bg-terracotta hover:bg-terracotta/90 text-white px-6 py-3 rounded-sm font-inter font-medium transition-all duration-200 inline-flex items-center gap-2;
+  }
+  .btn-secondary {
+    @apply border-2 border-ivory text-ivory hover:bg-ivory hover:text-forest px-6 py-3 rounded-sm font-inter font-medium transition-all duration-200 inline-flex items-center gap-2;
+  }
+  .btn-gold {
+    @apply bg-gold hover:bg-gold-dark text-forest px-6 py-3 rounded-sm font-inter font-medium transition-all duration-200 inline-flex items-center gap-2;
+  }
+  .card-shadow {
+    @apply shadow-lg hover:shadow-xl transition-shadow duration-300;
+  }
+  .lotus-bg {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='80' fill='none' stroke='%23F7F3EC' stroke-width='0.5' opacity='0.1'/%3E%3Ccircle cx='100' cy='100' r='60' fill='none' stroke='%23F7F3EC' stroke-width='0.5' opacity='0.1'/%3E%3Ccircle cx='100' cy='100' r='40' fill='none' stroke='%23F7F3EC' stroke-width='0.5' opacity='0.1'/%3E%3C/svg%3E");
+  }
+}
+
+/* Accordion */
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F3EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #1C0E05;
+  border-radius: 3px;
+}
+
+/* Mux player */
+mux-player {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
