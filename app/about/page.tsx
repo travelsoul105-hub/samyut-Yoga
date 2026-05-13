@@ -85,8 +85,8 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[380px] rounded-sm overflow-hidden">
               <Image
-                src="/images/samyut-yoga-gurukulam-teacher-training-mysore.jpg"
-                alt="Gurukulam yoga practice Mysore"
+                src="/images/aravind-prasad-gurukulam-guru-shishya-mysore.jpg"
+                alt="Aravind Prasad with his Guru — Gurukulam tradition Mysore"
                 fill
                 className="object-cover"
               />
