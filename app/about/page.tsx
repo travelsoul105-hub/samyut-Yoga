@@ -85,7 +85,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[380px] rounded-sm overflow-hidden">
               <Image
-                src="https://samyutyoga.com/wp-content/uploads/2024/06/tradition-pic.jpg"
+                src="/images/samyut-yoga-gurukulam-teacher-training-mysore.jpg"
                 alt="Gurukulam yoga practice Mysore"
                 fill
                 className="object-cover"
@@ -112,7 +112,7 @@ export default function AboutPage() {
             <div className="lg:col-span-1">
               <div className="relative h-[400px] lg:h-[500px] rounded-sm overflow-hidden sticky top-24">
                 <Image
-                  src="https://samyutyoga.com/wp-content/uploads/2024/06/hatha-page-image.jpg"
+                  src="/images/yogacharya-aravind-prasad-samyut-yoga-mysore.jpg"
                   alt="Yogacharya Aravind Prasad"
                   fill
                   className="object-cover object-top"

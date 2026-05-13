@@ -12,32 +12,32 @@ const facilities = [
   {
     title: "Yoga Shala",
     desc: "Spacious, ventilated practice hall with natural light, hardwood floors, quality props and a peaceful atmosphere. Designed for focused, authentic practice.",
-    image: "https://samyutyoga.com/wp-content/uploads/2024/07/DSL7102-1-scaled.jpg",
+    image: "/images/200hr-yoga-teacher-training-class-mysore-india.jpg",
   },
   {
     title: "Accommodation",
     desc: "Clean, comfortable rooms in triple sharing, twin sharing and private options. All rooms have natural ventilation, hot water and a calm environment conducive to study and rest.",
-    image: "https://samyutyoga.com/wp-content/uploads/2024/07/accomodation-scaled.jpg",
+    image: "/images/yoga-teacher-training-students-community-mysore.jpg",
   },
   {
     title: "Dining Hall",
     desc: "Nutritious yogic meals three times daily plus morning and evening snacks. Traditional Indian vegetarian cuisine with herbal drinks — food as medicine in the yogic tradition.",
-    image: "https://samyutyoga.com/wp-content/uploads/2024/07/food1.jpg",
+    image: "/images/aravind-prasad-yoga-teacher-mysore-india.jpg",
   },
   {
     title: "Study & Library",
     desc: "Quiet study space with a curated collection of yoga texts — Hatha Yoga Pradipika, Yoga Sutras, Gheranda Samhita, Vijnana Bhairava Tantra and other traditional sources.",
-    image: "https://samyutyoga.com/wp-content/uploads/2024/07/DSL7063-scaled.jpg",
+    image: "/images/yoga-teacher-student-one-on-one-session-mysore.jpg",
   },
   {
     title: "Mysore Location",
     desc: "Set in Mysore — the world capital of yoga and the spiritual heart of South India. Morning bird song, fresh air and the ancient energy of this sacred city enhance every practice.",
-    image: "https://samyutyoga.com/wp-content/uploads/2024/07/DSL7036-scaled.jpg",
+    image: "/images/ashtanga-yoga-teacher-training-outdoor-mysore-india.jpg",
   },
   {
     title: "Community Spaces",
     desc: "Shared spaces for kirtan, group discussions, evening gatherings and the social life of the Gurukulam — where the teaching continues beyond the formal sessions.",
-    image: "https://samyutyoga.com/wp-content/uploads/2024/07/DSL7073-1-scaled.jpg",
+    image: "/images/samyut-yoga-gurukulam-teacher-training-mysore.jpg",
   },
 ];
 

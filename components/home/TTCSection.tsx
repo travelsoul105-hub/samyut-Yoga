@@ -6,7 +6,7 @@ const courses = [
   {
     title: "200hrs Ashtanga Yoga TTC",
     href: "/teacher-training/ashtanga",
-    image: "https://samyutyoga.com/wp-content/uploads/2024/07/HEROSECTIONTTC-1-scaled.jpg",
+    image: "/images/ashtanga-yoga-teacher-training-outdoor-mysore-india.jpg",
     dates: "October 1–21, 2026",
     duration: "3 Weeks",
     timing: "6:30am – 7:30pm",
@@ -19,7 +19,7 @@ const courses = [
   {
     title: "200hrs Hatha Yoga TTC",
     href: "/teacher-training/hatha",
-    image: "https://samyutyoga.com/wp-content/uploads/2024/06/hatha-yog-teacher-training-hero.jpg",
+    image: "/images/hatha-yoga-teacher-training-mysore-aravind-prasad.jpg",
     dates: "November 1–21, 2026",
     duration: "3 Weeks",
     timing: "6:30am – 7:30pm",

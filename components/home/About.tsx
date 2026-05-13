@@ -10,7 +10,7 @@ export default function About() {
           <div className="relative">
             <div className="relative h-[420px] sm:h-[500px] rounded-sm overflow-hidden">
               <Image
-                src="https://samyutyoga.com/wp-content/uploads/2024/06/tradition-pic.jpg"
+                src="/images/200hr-yoga-teacher-training-class-mysore-india.jpg"
                 alt="Samyut Yoga Gurukulam Mysore"
                 fill
                 className="object-cover"

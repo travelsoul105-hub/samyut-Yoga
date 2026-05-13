@@ -41,7 +41,7 @@ export default function TeacherTrainingPage() {
             <div className="bg-white rounded-sm overflow-hidden card-shadow">
               <div className="relative h-64">
                 <Image
-                  src="https://samyutyoga.com/wp-content/uploads/2024/07/HEROSECTIONTTC-1-scaled.jpg"
+                  src="/images/ashtanga-yoga-teacher-training-outdoor-mysore-india.jpg"
                   alt="200hr Ashtanga Yoga TTC Mysore"
                   fill
                   className="object-cover"
@@ -92,7 +92,7 @@ export default function TeacherTrainingPage() {
             <div className="bg-white rounded-sm overflow-hidden card-shadow">
               <div className="relative h-64">
                 <Image
-                  src="https://samyutyoga.com/wp-content/uploads/2024/06/hatha-yog-teacher-training-hero.jpg"
+                  src="/images/hatha-yoga-teacher-training-mysore-aravind-prasad.jpg"
                   alt="200hr Hatha Yoga TTC Mysore"
                   fill
                   className="object-cover"

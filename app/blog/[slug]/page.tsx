@@ -16,7 +16,7 @@ const placeholderPost = {
   date: "April 15, 2026",
   readTime: "8 min read",
   category: "Pranayama",
-  image: "https://samyutyoga.com/wp-content/uploads/2024/05/YOGAPHILOSOPY.jpg",
+  image: "/images/aravind-prasad-virabhadrasana-warrior-pose-mysore.jpg",
   content: `
 Pranayama — the ancient science of breath control — has been a cornerstone of yogic practice for thousands of years. The Hatha Yoga Pradipika, compiled in the 15th century, devotes an entire chapter to these techniques, describing them as the royal road to controlling the mind.
 

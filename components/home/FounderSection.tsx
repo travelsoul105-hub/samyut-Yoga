@@ -11,7 +11,7 @@ export default function FounderSection() {
           <div className="relative order-2 lg:order-1">
             <div className="relative h-[480px] sm:h-[560px] rounded-sm overflow-hidden">
               <Image
-                src="https://samyutyoga.com/wp-content/uploads/2024/06/hatha-page-image.jpg"
+                src="/images/yogacharya-aravind-prasad-samyut-yoga-mysore.jpg"
                 alt="Yogacharya Aravind Prasad"
                 fill
                 className="object-cover object-top"

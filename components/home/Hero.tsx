@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center bg-forest overflow-hidden">
       {/* Hero background image */}
       <Image
-        src="https://samyutyoga.com/wp-content/uploads/2024/07/HEROSECTIONAUTHENTIC.jpg"
+        src="/images/ashtanga-yoga-teacher-training-outdoor-mysore-india.jpg"
         alt="Samyut Yoga — Authentic Traditional Yoga School Mysore"
         fill
         className="object-cover object-center opacity-30"
