@@ -16,8 +16,8 @@ export default function AssignmentsPage() {
 
   return (
     <div className="p-6 lg:p-8 max-w-3xl">
-      <h1 className="font-cormorant text-4xl font-semibold text-forest mb-2">Assignments</h1>
-      <p className="text-charcoal/55 font-inter text-sm mb-8">Written reflections to deepen your learning</p>
+      <h1 className="font-heading text-4xl font-semibold text-forest mb-2">Assignments</h1>
+      <p className="text-charcoal/55 font-body text-sm mb-8">Written reflections to deepen your learning</p>
 
       <div className="space-y-4 mb-8">
         {assignments.map((a) => (
@@ -31,15 +31,15 @@ export default function AssignmentsPage() {
                   : <FileText className="w-5 h-5 text-charcoal/30 flex-shrink-0" />
                 }
                 <div>
-                  <p className="font-inter text-sm font-medium text-charcoal">{a.title}</p>
-                  <p className={`font-inter text-xs mt-0.5 ${a.due.startsWith("Due") ? "text-terracotta" : "text-charcoal/40"}`}>
+                  <p className="font-body text-sm font-medium text-charcoal">{a.title}</p>
+                  <p className={`font-body text-xs mt-0.5 ${a.due.startsWith("Due") ? "text-terracotta" : "text-charcoal/40"}`}>
                     {a.due}
                   </p>
                 </div>
               </div>
               {a.status === "pending" && (
                 <button onClick={() => setActiveAssignment(a.id)}
-                  className="flex-shrink-0 bg-forest text-ivory px-3 py-1.5 text-xs font-inter font-medium rounded hover:bg-forest-light transition-colors">
+                  className="flex-shrink-0 bg-forest text-ivory px-3 py-1.5 text-xs font-body font-medium rounded hover:bg-forest-light transition-colors">
                   Submit
                 </button>
               )}
@@ -47,8 +47,8 @@ export default function AssignmentsPage() {
 
             {a.feedback && (
               <div className="border-t border-forest/10 px-5 py-3 bg-forest/5">
-                <p className="text-xs font-inter font-semibold text-forest mb-1">Feedback from Yogacharya:</p>
-                <p className="text-charcoal/65 font-inter text-sm italic">{a.feedback}</p>
+                <p className="text-xs font-body font-semibold text-forest mb-1">Feedback from Yogacharya:</p>
+                <p className="text-charcoal/65 font-body text-sm italic">{a.feedback}</p>
               </div>
             )}
 
@@ -57,20 +57,20 @@ export default function AssignmentsPage() {
                 {submitted ? (
                   <div className="text-center py-4">
                     <CheckCircle className="w-8 h-8 text-forest mx-auto mb-2" />
-                    <p className="font-inter text-sm font-medium text-forest">Assignment submitted!</p>
+                    <p className="font-body text-sm font-medium text-forest">Assignment submitted!</p>
                   </div>
                 ) : (
                   <div className="space-y-3">
                     <textarea value={text} onChange={(e) => setText(e.target.value)} rows={6}
-                      className="w-full border border-forest/20 rounded px-4 py-3 text-sm font-inter focus:outline-none focus:border-forest resize-none"
+                      className="w-full border border-forest/20 rounded px-4 py-3 text-sm font-body focus:outline-none focus:border-forest resize-none"
                       placeholder="Write your reflection here..." />
                     <div className="flex gap-3">
                       <button
-                        className="flex items-center gap-2 border border-forest/20 text-forest px-4 py-2 rounded text-xs font-inter hover:bg-forest/5 transition-colors">
+                        className="flex items-center gap-2 border border-forest/20 text-forest px-4 py-2 rounded text-xs font-body hover:bg-forest/5 transition-colors">
                         <Upload className="w-3.5 h-3.5" /> Attach File
                       </button>
                       <button onClick={() => { if (text.trim()) setSubmitted(true); }}
-                        className="bg-terracotta hover:bg-terracotta/90 text-white px-5 py-2 rounded text-xs font-inter font-medium transition-colors">
+                        className="bg-terracotta hover:bg-terracotta/90 text-white px-5 py-2 rounded text-xs font-body font-medium transition-colors">
                         Submit Assignment
                       </button>
                     </div>

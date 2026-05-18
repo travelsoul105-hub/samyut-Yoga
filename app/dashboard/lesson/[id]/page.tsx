@@ -84,7 +84,7 @@ export default async function LessonPage({
   return (
     <div className="max-w-4xl">
       {/* Breadcrumb */}
-      <div className="px-6 lg:px-8 py-4 border-b border-forest/10 bg-white flex items-center gap-2 text-xs font-inter text-charcoal/50">
+      <div className="px-6 lg:px-8 py-4 border-b border-forest/10 bg-white flex items-center gap-2 text-xs font-body text-charcoal/50">
         <Link
           href="/dashboard/modules"
           className="hover:text-forest transition-colors flex items-center gap-1 flex-shrink-0"
@@ -113,15 +113,15 @@ export default async function LessonPage({
               <svg viewBox="0 0 24 24" fill="currentColor" className="w-12 h-12 opacity-30">
                 <path d="M8 5v14l11-7z" />
               </svg>
-              <p className="font-inter text-sm">No video linked yet</p>
+              <p className="font-body text-sm">No video linked yet</p>
             </div>
           )}
         </div>
 
-        <h1 className="font-cormorant text-3xl font-semibold text-forest mb-2">
+        <h1 className="font-heading text-3xl font-semibold text-forest mb-2">
           {lesson.title}
         </h1>
-        <p className="text-charcoal/50 font-inter text-sm mb-6">
+        <p className="text-charcoal/50 font-body text-sm mb-6">
           {moduleTitle}
           {formatDuration(lesson.duration_seconds) &&
             ` · ${formatDuration(lesson.duration_seconds)}`}
@@ -131,10 +131,10 @@ export default async function LessonPage({
         {/* Notes */}
         {(lesson.description || lesson.notes) && (
           <div className="bg-white border border-forest/10 p-6 rounded-sm mb-6">
-            <h2 className="font-cormorant text-xl font-semibold text-forest mb-3">
+            <h2 className="font-heading text-xl font-semibold text-forest mb-3">
               Lesson Notes
             </h2>
-            <div className="text-charcoal/70 font-inter text-sm leading-relaxed space-y-3">
+            <div className="text-charcoal/70 font-body text-sm leading-relaxed space-y-3">
               {lesson.description && <p>{lesson.description}</p>}
               {lesson.notes && <p>{lesson.notes}</p>}
             </div>
@@ -146,7 +146,7 @@ export default async function LessonPage({
           {prevLesson ? (
             <Link
               href={`/dashboard/lesson/${prevLesson.id}`}
-              className="flex items-center gap-2 border border-forest/20 text-forest hover:bg-forest hover:text-ivory px-4 py-2 rounded text-sm font-inter font-medium transition-all"
+              className="flex items-center gap-2 border border-forest/20 text-forest hover:bg-forest hover:text-ivory px-4 py-2 rounded text-sm font-body font-medium transition-all"
             >
               <ChevronLeft className="w-4 h-4" /> Previous
             </Link>
@@ -163,7 +163,7 @@ export default async function LessonPage({
           {nextLesson ? (
             <Link
               href={`/dashboard/lesson/${nextLesson.id}`}
-              className="flex items-center gap-2 border border-forest/20 text-forest hover:bg-forest hover:text-ivory px-4 py-2 rounded text-sm font-inter font-medium transition-all"
+              className="flex items-center gap-2 border border-forest/20 text-forest hover:bg-forest hover:text-ivory px-4 py-2 rounded text-sm font-body font-medium transition-all"
             >
               Next <ChevronRight className="w-4 h-4" />
             </Link>

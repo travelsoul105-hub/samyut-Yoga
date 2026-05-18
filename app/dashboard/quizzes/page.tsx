@@ -65,16 +65,16 @@ export default function QuizzesPage() {
   if (activeQuiz && quiz && !submitted) {
     return (
       <div className="p-6 lg:p-8 max-w-2xl">
-        <button onClick={() => setActiveQuiz(null)} className="text-forest text-sm font-inter mb-5 hover:underline">← Back to Quizzes</button>
-        <h1 className="font-cormorant text-3xl font-semibold text-forest mb-6">{quiz.title}</h1>
+        <button onClick={() => setActiveQuiz(null)} className="text-forest text-sm font-body mb-5 hover:underline">← Back to Quizzes</button>
+        <h1 className="font-heading text-3xl font-semibold text-forest mb-6">{quiz.title}</h1>
         <div className="space-y-6">
           {quiz.questions.map((item, qi) => (
             <div key={qi} className="bg-white border border-forest/10 p-5 rounded-sm">
-              <p className="font-inter text-sm font-medium text-charcoal mb-3">{qi + 1}. {item.q}</p>
+              <p className="font-body text-sm font-medium text-charcoal mb-3">{qi + 1}. {item.q}</p>
               <div className="space-y-2">
                 {item.options.map((opt, oi) => (
                   <button key={oi} onClick={() => handleAnswer(qi, oi)}
-                    className={`w-full text-left px-4 py-2.5 border rounded text-sm font-inter transition-colors ${
+                    className={`w-full text-left px-4 py-2.5 border rounded text-sm font-body transition-colors ${
                       answers[qi] === oi ? "border-forest bg-forest/10 text-forest font-medium" : "border-charcoal/10 hover:border-forest/30 text-charcoal/70"
                     }`}>
                     {opt}
@@ -87,7 +87,7 @@ export default function QuizzesPage() {
         <button
           onClick={() => setSubmitted(true)}
           disabled={answers.length < quiz.questions.length}
-          className="mt-6 w-full bg-forest text-ivory py-3.5 rounded font-inter font-medium text-sm transition-all disabled:opacity-50">
+          className="mt-6 w-full bg-forest text-ivory py-3.5 rounded font-body font-medium text-sm transition-all disabled:opacity-50">
           Submit Quiz
         </button>
       </div>
@@ -101,22 +101,22 @@ export default function QuizzesPage() {
         <div className={`text-6xl mb-4 ${score >= 70 ? "text-forest" : "text-terracotta"}`}>
           {score >= 70 ? "🎉" : "📚"}
         </div>
-        <h2 className="font-cormorant text-4xl font-semibold text-forest mb-2">
+        <h2 className="font-heading text-4xl font-semibold text-forest mb-2">
           {score}% Score
         </h2>
-        <p className="font-inter text-sm text-charcoal/60 mb-6">
+        <p className="font-body text-sm text-charcoal/60 mb-6">
           {score >= 70 ? "Well done! You passed this quiz." : "Keep studying and retake after 24 hours."}
         </p>
         <div className="space-y-3 text-left mb-6">
           {quiz.questions.map((item, qi) => (
             <div key={qi} className={`p-4 border rounded-sm ${answers[qi] === item.correct ? "border-forest/20 bg-forest/5" : "border-red-200 bg-red-50"}`}>
-              <p className="text-sm font-inter text-charcoal/80 mb-1">{item.q}</p>
+              <p className="text-sm font-body text-charcoal/80 mb-1">{item.q}</p>
               <div className="flex items-center gap-2">
                 {answers[qi] === item.correct
                   ? <CheckCircle className="w-4 h-4 text-forest" />
                   : <XCircle className="w-4 h-4 text-red-500" />
                 }
-                <span className="text-xs font-inter text-charcoal/60">
+                <span className="text-xs font-body text-charcoal/60">
                   Correct: {item.options[item.correct]}
                 </span>
               </div>
@@ -131,8 +131,8 @@ export default function QuizzesPage() {
 
   return (
     <div className="p-6 lg:p-8 max-w-3xl">
-      <h1 className="font-cormorant text-4xl font-semibold text-forest mb-2">Quizzes</h1>
-      <p className="text-charcoal/55 font-inter text-sm mb-8">Test your knowledge · Retake available after 24h</p>
+      <h1 className="font-heading text-4xl font-semibold text-forest mb-2">Quizzes</h1>
+      <p className="text-charcoal/55 font-body text-sm mb-8">Test your knowledge · Retake available after 24h</p>
       <div className="space-y-4">
         {quizzes.map((q) => (
           <div key={q.id} className="bg-white border border-forest/10 p-5 rounded-sm flex items-center justify-between gap-4">
@@ -144,18 +144,18 @@ export default function QuizzesPage() {
                 : <HelpCircle className="w-6 h-6 text-gold flex-shrink-0" />
               }
               <div>
-                <p className="font-inter text-sm font-medium text-charcoal">{q.title}</p>
-                {q.score && <p className="font-inter text-xs text-forest mt-0.5">Score: {q.score}%</p>}
+                <p className="font-body text-sm font-medium text-charcoal">{q.title}</p>
+                {q.score && <p className="font-body text-xs text-forest mt-0.5">Score: {q.score}%</p>}
               </div>
             </div>
             {q.status === "available" && (
               <button onClick={() => { setActiveQuiz(q.id); setAnswers([]); setSubmitted(false); }}
-                className="bg-forest text-ivory px-4 py-2 rounded text-xs font-inter font-medium hover:bg-forest-light transition-colors flex-shrink-0">
+                className="bg-forest text-ivory px-4 py-2 rounded text-xs font-body font-medium hover:bg-forest-light transition-colors flex-shrink-0">
                 Start Quiz
               </button>
             )}
             {q.status === "completed" && (
-              <button className="border border-forest/20 text-forest px-4 py-2 rounded text-xs font-inter hover:bg-forest/5 transition-colors flex-shrink-0">
+              <button className="border border-forest/20 text-forest px-4 py-2 rounded text-xs font-body hover:bg-forest/5 transition-colors flex-shrink-0">
                 Review
               </button>
             )}

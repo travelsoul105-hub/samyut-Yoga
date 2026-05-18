@@ -6,10 +6,10 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center bg-forest overflow-hidden">
       {/* Hero background image */}
       <Image
-        src="/images/ashtanga-yoga-teacher-training-outdoor-mysore-india.jpg"
-        alt="Samyut Yoga — Authentic Traditional Yoga School Mysore"
+        src="/images/IMG_0823.JPEG"
+        alt="Yogacharya Aravind Prasad leading Yoga Nidra session — Samyut Yoga Mysore"
         fill
-        className="object-cover object-center opacity-30"
+        className="object-cover object-center opacity-40"
         priority
       />
       {/* SVG Lotus Mandala watermark */}

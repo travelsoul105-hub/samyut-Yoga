@@ -46,8 +46,8 @@ export default async function ModulesPage() {
   if (!enrolment) {
     return (
       <div className="p-6 lg:p-8">
-        <h1 className="font-cormorant text-4xl font-semibold text-forest mb-4">Course Modules</h1>
-        <p className="text-charcoal/50 font-inter text-sm">
+        <h1 className="font-heading text-4xl font-semibold text-forest mb-4">Course Modules</h1>
+        <p className="text-charcoal/50 font-body text-sm">
           You are not enrolled in any course yet. Please contact{" "}
           <a href="mailto:info@samyutyoga.com" className="text-forest underline">
             info@samyutyoga.com
@@ -103,16 +103,16 @@ export default async function ModulesPage() {
 
   return (
     <div className="p-6 lg:p-8 max-w-3xl">
-      <h1 className="font-cormorant text-4xl font-semibold text-forest mb-2">
+      <h1 className="font-heading text-4xl font-semibold text-forest mb-2">
         Course Modules
       </h1>
-      <p className="text-charcoal/55 font-inter text-sm mb-8">
+      <p className="text-charcoal/55 font-body text-sm mb-8">
         {courseTitle} · {modules?.length ?? 0} modules · {totalLessons} lessons ·{" "}
         {completedCount} completed
       </p>
 
       {(!modules || modules.length === 0) && (
-        <p className="text-charcoal/40 font-inter text-sm italic">
+        <p className="text-charcoal/40 font-body text-sm italic">
           No modules have been published yet. Check back soon.
         </p>
       )}
@@ -128,15 +128,15 @@ export default async function ModulesPage() {
               className="border border-forest/15 bg-white rounded-sm overflow-hidden"
             >
               <div className="px-5 py-4">
-                <h2 className="font-cormorant text-lg font-semibold text-forest">
+                <h2 className="font-heading text-lg font-semibold text-forest">
                   {mod.title}
                 </h2>
                 {mod.description && (
-                  <p className="font-inter text-xs text-charcoal/50 mt-0.5">
+                  <p className="font-body text-xs text-charcoal/50 mt-0.5">
                     {mod.description}
                   </p>
                 )}
-                <p className="font-inter text-xs text-charcoal/40 mt-1">
+                <p className="font-body text-xs text-charcoal/40 mt-1">
                   {modCompleted}/{modLessons.length} lessons completed
                 </p>
               </div>
@@ -163,7 +163,7 @@ export default async function ModulesPage() {
                         </div>
                         <div className="flex-1 min-w-0">
                           <p
-                            className={`font-inter text-sm transition-colors ${
+                            className={`font-body text-sm transition-colors ${
                               done
                                 ? "text-charcoal/40 line-through"
                                 : "text-charcoal/80 group-hover:text-forest"
@@ -172,7 +172,7 @@ export default async function ModulesPage() {
                             {lesson.title}
                           </p>
                           {lesson.duration_seconds && (
-                            <p className="font-inter text-xs text-charcoal/35">
+                            <p className="font-body text-xs text-charcoal/35">
                               {formatDuration(lesson.duration_seconds)}
                             </p>
                           )}
@@ -184,7 +184,7 @@ export default async function ModulesPage() {
                 </div>
               ) : (
                 <div className="border-t border-forest/10 px-5 py-4">
-                  <p className="text-charcoal/35 font-inter text-sm italic">
+                  <p className="text-charcoal/35 font-body text-sm italic">
                     No lessons published yet
                   </p>
                 </div>

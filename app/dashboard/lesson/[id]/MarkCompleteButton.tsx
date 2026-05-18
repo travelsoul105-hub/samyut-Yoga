@@ -30,7 +30,7 @@ export default function MarkCompleteButton({
     <button
       onClick={toggle}
       disabled={loading}
-      className={`flex items-center gap-2 px-6 py-2.5 rounded text-sm font-inter font-medium transition-all disabled:opacity-60 ${
+      className={`flex items-center gap-2 px-6 py-2.5 rounded text-sm font-body font-medium transition-all disabled:opacity-60 ${
         completed
           ? "bg-forest/10 text-forest border border-forest/20 hover:bg-forest/20"
           : "bg-forest hover:bg-forest/90 text-ivory"
