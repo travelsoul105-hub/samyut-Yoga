@@ -95,3 +95,13 @@ npm run lint         # ESLint
 5. Set up Mux and add playbackIds to lessons table
 6. Connect Sanity project for blog CMS
 7. Run `npm run dev`
+
+## Git & Deployment Workflow
+- **Always work directly on the `main` branch** — never create feature branches or worktrees
+- Commit and push to `main` immediately after each change
+- Vercel auto-deploys to samyutyoga.com on every push to `main`
+- **Images:** Keep new images under 100KB before committing. Use sharp to compress if needed:
+  ```bash
+  node -e "require('sharp')('input.png').resize(180,180).png({compressionLevel:9}).toFile('output.png')"
+  ```
+- Never commit large files (videos, raw photos) — use Cloudinary or public URLs instead
