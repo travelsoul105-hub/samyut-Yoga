@@ -51,16 +51,14 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-18">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 flex-shrink-0">
-            <div className="rounded-full bg-ivory p-0.5 ring-2 ring-ivory/40 flex-shrink-0">
-              <Image
-                src="/images/logo.jpg"
-                alt="Samyut Yoga"
-                width={38}
-                height={38}
-                className="rounded-full object-cover"
-              />
-            </div>
+          <Link href="/" className="flex items-center gap-2 flex-shrink-0">
+            <Image
+              src="/images/logo.png"
+              alt="Samyut Yoga"
+              width={48}
+              height={48}
+              className="object-contain flex-shrink-0"
+            />
             <span className="font-cormorant text-xl font-semibold hidden sm:block text-ivory">
               Samyut Yoga
             </span>
