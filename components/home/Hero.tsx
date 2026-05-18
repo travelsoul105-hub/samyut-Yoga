@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center bg-forest overflow-hidden">
       {/* Hero background image */}
       <Image
-        src="/images/IMG_0823.JPEG"
+        src="/images/yoga-nidra-class-samyut-yoga-mysore.jpg"
         alt="Yogacharya Aravind Prasad leading Yoga Nidra session — Samyut Yoga Mysore"
         fill
         className="object-cover object-center opacity-40"
