@@ -6,24 +6,25 @@ export default function About() {
     <section className="section-padding bg-ivory">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Image */}
-          <div className="relative">
-            <div className="relative h-[420px] sm:h-[500px] rounded-sm overflow-hidden">
+          {/* Logo */}
+          <div className="relative flex justify-center">
+            <div className="relative w-[340px] h-[340px] sm:w-[420px] sm:h-[420px] rounded-full bg-ivory flex items-center justify-center shadow-2xl ring-4 ring-gold/20">
               <Image
-                src="/images/200hr-yoga-teacher-training-class-mysore-india.jpg"
-                alt="Samyut Yoga Gurukulam Mysore"
-                fill
-                className="object-cover"
+                src="/images/samyut-yoga-logo-about.png"
+                alt="Samyut Yoga — Scientific & Mystical Yoga for Universal Transformation"
+                width={520}
+                height={520}
+                className="object-contain rounded-full w-full h-full"
+                priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-forest/40 to-transparent" />
             </div>
             {/* Floating accent card */}
-            <div className="absolute -bottom-6 -right-6 bg-forest text-ivory p-5 shadow-xl max-w-[180px]">
+            <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 bg-forest text-ivory p-5 shadow-xl max-w-[180px] rounded-sm">
               <p className="font-cormorant text-3xl font-bold text-gold">15+</p>
               <p className="font-inter text-xs text-ivory/70 mt-1">Years of Traditional Teaching</p>
             </div>
-            {/* Gold border accent */}
-            <div className="absolute -top-4 -left-4 w-24 h-24 border-2 border-gold/30 rounded-sm pointer-events-none" />
+            {/* Outer gold ring accent */}
+            <div className="absolute -top-4 -left-4 w-24 h-24 border-2 border-gold/30 rounded-full pointer-events-none" />
           </div>
 
           {/* Content */}
